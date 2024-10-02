@@ -33,7 +33,10 @@
 - Remove 2023 PPCINC
 - Rename 2023's PRPCINC to PPCINC
 - Remove 2023's RPCINC and rename RPCINC_NIR to RPCINC
-- Remove 2023's W_REGN and rename W_REGN_NIR to W_REGN
+
+# Important Notes
+
+- We've decided to drop 2023's W_REGN_NIR which includes Negros Island Region to provide consistency as it is not also included in 2021's dataset
 
 # Codes
 
