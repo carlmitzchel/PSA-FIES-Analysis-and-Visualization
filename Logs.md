@@ -34,3 +34,20 @@
 - Rename 2023's PRPCINC to PPCINC
 - Remove 2023's RPCINC and rename RPCINC_NIR to RPCINC
 - Remove 2023's W_REGN and rename W_REGN_NIR to W_REGN
+
+# Codes
+
+Distribution
+`columns_to_plot = ['FSIZE', 'REG_SAL', 'PCINC', 'WAGES', 'FOOD']
+
+fig, axes = plt.subplots(3, 2, figsize=(12, 10))
+
+for i, col in enumerate(columns_to_plot):
+ax = axes[i//2, i%2]
+ax.hist(df_21[col], bins=30, color='skyblue', edgecolor='black')
+ax.set_title(f'Distribution of {col}')
+ax.set_xlabel(col)
+ax.set_ylabel('Frequency')
+
+plt.tight_layout()
+plt.show()`
